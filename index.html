@@ -13,6 +13,20 @@
             font-style: normal;
         }
     </style>
+
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;      /*The images automatically resizes itself*/
+        }
+    </style>
+
+    <style>
+        video{
+            width: 300px;       /*The css will automatically adjust the height of the video as per its layout*/
+        }
+    </style>
 </head>
 <body>
     <p>I love to learn <em>HTML</em>! <strong>This is a strong element! </strong> </p>    <!--em is emphasis, not necessarily bold, it can bechanged! Check <style> -->
@@ -34,5 +48,8 @@
 
     <p>Now let's try adding images!</p>
     <a href="company/about.html">About Me</a>      <!--Anchor Tag for hyperlinks!-->
+    <img src="images/coffee.avif" alt="Coffee">
+    <video controls autoplay loop src="videos/greece.mp4">Your browser may not support videos :/ </video>   <!--controls is a boolean attribute, its presence represents the true value, and adds 'control buttons' to the video-->
+    <audio src=""></audio>   // Same as videos
 </body>
 </html>
