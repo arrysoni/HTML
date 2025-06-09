@@ -27,6 +27,47 @@
             width: 300px;       /*The css will automatically adjust the height of the video as per its layout*/
         }
     </style>
+
+    <style>
+        ul{
+            list-style-type: square;
+        }
+    </style>
+
+    <style>
+        .product{
+
+            background-color:blanchedalmond;
+
+        }
+    </style>
+
+    <style>
+        table,td,th{
+            border: 1px solid blue;
+            border-collapse: collapse;
+            padding: 5px;
+
+        }
+
+        tfoot{
+            text-align: left;
+        }
+    </style>
+
+    <style>
+        .product{
+            background-color: teal;
+            width: 300px;
+        }
+
+        .highlight{
+            background-color: brown;
+        }
+    </style>
+
+
+
 </head>
 <body>
     <p>I love to learn <em>HTML</em>! <strong>This is a strong element! </strong> </p>    <!--em is emphasis, not necessarily bold, it can bechanged! Check <style> -->
@@ -51,5 +92,131 @@
     <img src="images/coffee.avif" alt="Coffee">
     <video controls autoplay loop src="videos/greece.mp4">Your browser may not support videos :/ </video>   <!--controls is a boolean attribute, its presence represents the true value, and adds 'control buttons' to the video-->
     <audio src=""></audio>   // Same as videos
+
+        <ul>
+            <li>About Me</li>
+            <li>Hey There!
+                <ol>
+                    <li>Smile</li>
+                    <li>Say hi</li>
+                </ol>
+            </li>
+            
+        </ul>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheet</dd>
+        </dl>
+
+        <div class="product">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex inventore, voluptate repudiandae sit odio adipisci maiores eius sint voluptatum doloremque repellendus veritatis. Commodi debitis labore porro eaque architecto nihil!</p>
+            <a href="#">Link</a>
+        </div>
+
+        <!--We will now create tables!-->
+
+        <table>
+            <thead>
+                
+                <tr>
+                    <th colspan="2">Expenses</th>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+                
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Marketing</td>
+                    <td>$100</td>
+                </tr>
+    
+                <tr>
+                    <td>Accounting</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <th>Total</th>
+                <th>$300</th>
+            </tfoot>
+
+
+            <!--pay attention to how the header and footer and bold and centre-aligned! We can change it as per our requirements.-->
+        </table>
+        
+
+        <div class="product">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente in autem facilis quo adipisci placeat ut cum consectetur quam ea.</p>
+            <a href="# ">LinkDiv</a>
+        </div>
+
+        <p>
+            <span class=" highlight">Lorem</span>Lorem ipsum dolor sit amet. 
+        </p>
+
+
+        <!--Now let's look into new semantics!-->
+        
+        <!--An article is an independednt, self-contained piece of content-->
+        <article class="article">
+            <h1>Heading</h1>
+            <p>Published <time datetime="2025-07-06 18:22">June 7th, 2025, 6:22 pm</time></p>
+            <p><span class="highlight">Lorem</span>, ipsum dolor sit amet consectetur <mark>adipisicing elit</mark>. Cum perspiciatis itaque suscipit ratione dicta sunt, explicabo obcaecati ea nemo reprehenderit ducimus libero delectus vel eveniet iure! Optio sit et harum minus quam nam odio!</p>
+
+            <figure>
+                <img src="images/coffee.avif" alt=""Coffee this morning!>
+                <figcaption>My coffee this morning!</figcaption>
+            </figure>
+        </div>
 </body>
 </html>
+
+<!--This following is the basic structure of a web page-->
+<!--
+<body>
+    <header></header>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    <main>
+        <section>
+            <h2>Products</h2>
+            <article><article>
+            <article><article>
+        </section>   // to group related content
+        <section>
+            <h2>Testimonial</h2>
+            <article><article>
+            <article><article>
+        </section>
+    </main>
+    <aside></aside>
+    <footer>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+
+
+
+-->
