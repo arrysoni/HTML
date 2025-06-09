@@ -1,222 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">   <!-- It is a character set more extensive than ASCII-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--Viewport means our webpage and we adjust the size of our page as per the size of our device-->
-    <meta name="keywords" content="HTML,CSS">
-    <meta name="description" content="...">   <!--This meta-page gives us information about the webpage.  -->
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with CSS</title>
+    
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <style>
-        em{
-            color: red;
-            font-style: normal;
+    <style> /*This always overrides external stylesheets*/
+        p{
+            color: black;
+        }
+
+        #first{
+            color: rgb(195, 20, 93); 
+            font-weight: bold;
         }
     </style>
-
-    <style>
-        img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;      /*The images automatically resizes itself*/
-        }
-    </style>
-
-    <style>
-        video{
-            width: 300px;       /*The css will automatically adjust the height of the video as per its layout*/
-        }
-    </style>
-
-    <style>
-        ul{
-            list-style-type: square;
-        }
-    </style>
-
-    <style>
-        .product{
-
-            background-color:blanchedalmond;
-
-        }
-    </style>
-
-    <style>
-        table,td,th{
-            border: 1px solid blue;
-            border-collapse: collapse;
-            padding: 5px;
-
-        }
-
-        tfoot{
-            text-align: left;
-        }
-    </style>
-
-    <style>
-        .product{
-            background-color: teal;
-            width: 300px;
-        }
-
-        .highlight{
-            background-color: brown;
-        }
-    </style>
-
-
-
 </head>
 <body>
-    <p>I love to learn <em>HTML</em>! <strong>This is a strong element! </strong> </p>    <!--em is emphasis, not necessarily bold, it can bechanged! Check <style> -->
-    <p> You can use the tags inside HTML code by using entities. It's called less than and greater than and is used as follows: &lt;Enclosed in a Tag&gt;! You can also write the copyright symbol &copy; .</p>
-    
-    <p>Say you generate a dummy text and you want to make sure that two words don't break at the end of the statement. We make use of an entity known as non-breaking space (nbsp).</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia animi deserunt ipsum quas quaerat laborum autem incidunt aut&nbsp;sit laboriosam commodi quos, non accusantium quibusdam sequi repudiandae neque ab consequatur praesentium libero necessitatibus! Vel ratione quia, nihil eligendi laborum vero veniam modi ipsum deleniti iusto? Dolor accusamus dignissimos deserunt!</p>
-
-    <p><strong>This is a strong element! </strong> </p>  
-
-    <!--This is based on hierarchy, not size of the font!-->
-    <h1>This is H1.</h1>
-    <h2>This is H2.</h2>
-    <h3>This is H3.</h3>
-    <h4>This is H4.</h4>
-    <h5>This is H5.</h5>
-    <h6>This is H6.</h6>
-
-
-    <p>Now let's try adding images!</p>
-    <a href="company/about.html">About Me</a>      <!--Anchor Tag for hyperlinks!-->
-    <img src="images/coffee.avif" alt="Coffee">
-    <video controls autoplay loop src="videos/greece.mp4">Your browser may not support videos :/ </video>   <!--controls is a boolean attribute, its presence represents the true value, and adds 'control buttons' to the video-->
-    <audio src=""></audio>   // Same as videos
-
-        <ul>
-            <li>About Me</li>
-            <li>Hey There!
-                <ol>
-                    <li>Smile</li>
-                    <li>Say hi</li>
-                </ol>
-            </li>
-            
-        </ul>
-
-        <dl>
-            <dt>HTML</dt>
-            <dd>Hypertext Markup Language</dd>
-
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheet</dd>
-        </dl>
-
-        <div class="product">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex inventore, voluptate repudiandae sit odio adipisci maiores eius sint voluptatum doloremque repellendus veritatis. Commodi debitis labore porro eaque architecto nihil!</p>
-            <a href="#">Link</a>
-        </div>
-
-        <!--We will now create tables!-->
-
-        <table>
-            <thead>
-                
-                <tr>
-                    <th colspan="2">Expenses</th>
-                </tr>
-                <tr>
-                    <th>Category</th>
-                    <th>Amount</th>
-                </tr>
-                
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>Marketing</td>
-                    <td>$100</td>
-                </tr>
-    
-                <tr>
-                    <td>Accounting</td>
-                    <td>$200</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <th>Total</th>
-                <th>$300</th>
-            </tfoot>
-
-
-            <!--pay attention to how the header and footer and bold and centre-aligned! We can change it as per our requirements.-->
-        </table>
-        
-
-        <div class="product">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente in autem facilis quo adipisci placeat ut cum consectetur quam ea.</p>
-            <a href="# ">LinkDiv</a>
-        </div>
-
-        <p>
-            <span class=" highlight">Lorem</span>Lorem ipsum dolor sit amet. 
-        </p>
-
-
-        <!--Now let's look into new semantics!-->
-        
-        <!--An article is an independednt, self-contained piece of content-->
-        <article class="article">
-            <h1>Heading</h1>
-            <p>Published <time datetime="2025-07-06 18:22">June 7th, 2025, 6:22 pm</time></p>
-            <p><span class="highlight">Lorem</span>, ipsum dolor sit amet consectetur <mark>adipisicing elit</mark>. Cum perspiciatis itaque suscipit ratione dicta sunt, explicabo obcaecati ea nemo reprehenderit ducimus libero delectus vel eveniet iure! Optio sit et harum minus quam nam odio!</p>
-
-            <figure>
-                <img src="images/coffee.avif" alt=""Coffee this morning!>
-                <figcaption>My coffee this morning!</figcaption>
-            </figure>
-        </div>
+    <p id="first">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
 </body>
 </html>
-
-<!--This following is the basic structure of a web page-->
-<!--
-<body>
-    <header></header>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-    <main>
-        <section>
-            <h2>Products</h2>
-            <article><article>
-            <article><article>
-        </section>   // to group related content
-        <section>
-            <h2>Testimonial</h2>
-            <article><article>
-            <article><article>
-        </section>
-    </main>
-    <aside></aside>
-    <footer>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-    </footer>
-</body>
-
-
-
-
--->
