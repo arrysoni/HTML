@@ -2,39 +2,29 @@ body{
     margin: 10px;
 }
 
-a[href*="google"]{     /*This just casually checks for any links named "google"*/
-    color: orange;
-}
 
-a[href^="https"][href$=".com"]{     /*This just checks the links that start with https, and end with https*/
-    color: rgb(50, 200, 168);
-}
+/*
+The following is an example of using a pseudo-element.
 
-#products ~ p{          /* We use > for a p inside section, + for a p outside the section, ~ general siblings for the section markup*/
-    color: orange;
-}
+1. Pseudo Element: To style a part of an element (eg. first letter)
+2. Pseudo Class: To style an element in a particular state (eg. hover)
 
-article p:first-of-type{
+*/
+p::first-letter{
     font-size: 140%;
-    font-style: italic;
-}
-
-article p:last-of-type{
     font-weight: bold;
 }
 
-ul li:nth-child(odd){
-    color:deeppink;
+p::first-line{
+    font-weight: bold;
 }
 
-a:visited,
-a:link{
-    color: dodgerblue;
+::selection{        /*Any element that is selected will have a pink background*/
+    background-color: pink;
 }
 
-a:hover, a:focus{
-    color: rgb(226, 49, 0);
-}
 
-/*we can also use article.first*/
-/*This is frankly a very fragile system, because any slight changes in the layout of the code, the layout changes!!!*/
+p::before{
+    content:"...";
+    display: block;
+}
