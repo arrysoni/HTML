@@ -2,3 +2,39 @@ body{
     margin: 10px;
 }
 
+a[href*="google"]{     /*This just casually checks for any links named "google"*/
+    color: orange;
+}
+
+a[href^="https"][href$=".com"]{     /*This just checks the links that start with https, and end with https*/
+    color: rgb(50, 200, 168);
+}
+
+#products ~ p{          /* We use > for a p inside section, + for a p outside the section, ~ general siblings for the section markup*/
+    color: orange;
+}
+
+article p:first-of-type{
+    font-size: 140%;
+    font-style: italic;
+}
+
+article p:last-of-type{
+    font-weight: bold;
+}
+
+ul li:nth-child(odd){
+    color:deeppink;
+}
+
+a:visited,
+a:link{
+    color: dodgerblue;
+}
+
+a:hover, a:focus{
+    color: rgb(226, 49, 0);
+}
+
+/*we can also use article.first*/
+/*This is frankly a very fragile system, because any slight changes in the layout of the code, the layout changes!!!*/
