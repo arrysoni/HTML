@@ -1,14 +1,30 @@
-.box1{
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(45deg,dodgerblue, pink 30%, yellow);
-    box-shadow: 0 0 30px grey;
-
-    
-}
-
-
-h1{
+table {
+    width: 600px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  th {
+    background-color: #427fef;
     color: white;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.2);
-}
+    padding: 10px;
+    text-align: left;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #eef7ff;
+  }
+  
+  tfoot tr {
+    background-color: #427fef;
+    color: white;
+  }
+  
+  table, th, td {
+    border: 1px solid #c4dcf3;
+  }
+  

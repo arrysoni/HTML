@@ -3,14 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styling with CSS</title>
-    
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Exercises</title>
 
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
 </head>
 <body>
-   <div class="box1"><h1>Heading</h1></div>
-   
+
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>OrderID</th>
+                <th>Order Amount</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="light-rows">
+                <td>USA</td>
+                <td>1000</td>
+                <td>$1,300</td>
+            </tr>
+            
+            <tr class="light-rows">
+                <td>USA</td>
+                <td>1001</td>
+                <td>$700</td>
+            </tr>
+            <tr class="light-rows">
+                <td>CA</td>
+                <td>1002</td>
+                <td>$2,000</td>
+            </tr>
+            <tr class="light-rows">
+                <td>CA</td>
+                <td>1003</td>
+                <td>$1,000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>$5,000</td>
+            
+            </tr>
+        </tfoot>
+    </table>
+        
+    <div class="box"></div>
 </body>
 </html>
