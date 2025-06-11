@@ -1,12 +1,15 @@
-p{
-    color: dodgerblue;
-    border: 1px solid black;
+.box1{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg,dodgerblue, pink 30%, yellow);
+
+    
 }
-/* Here the strong element inherits the color blue */
 
+.box2{
+    width: 600px;
+    height: 200px;
+    background: radial-gradient(125deg,dodgerblue, pink 30%, yellow);
 
-strong{
-    color: initial;
-    border: inherit;    /* We areexplicitly inheriting the border property */
-
+    
 }
