@@ -1,30 +1,32 @@
-body{
-    margin: 10px;
+h1{
+    color: dodgerblue;
 }
 
 
-/*
-The following is an example of using a pseudo-element.
+.highlight{
+    color: deeppink;
+}
 
-1. Pseudo Element: To style a part of an element (eg. first letter)
-2. Pseudo Class: To style an element in a particular state (eg. hover)
+#products{
+    color: greenyellow;
+}
+
+.highlight#products{
+    color: coral;
+}
+
+h1#products{
+    color: paleturquoise;
+}
+/*
+Selector Specificity: Each selector has a specificity or weight. If two rules target the same element, then the rule that is more specific will be applied. 
+
+1. ID selectors
+2. Class and Attributes selectors
+3. Element selectors
+
+Equal specificity: The rule that was applied the last will have more precedence
+
 
 */
-p::first-letter{
-    font-size: 140%;
-    font-weight: bold;
-}
 
-p::first-line{
-    font-weight: bold;
-}
-
-::selection{        /*Any element that is selected will have a pink background*/
-    background-color: pink;
-}
-
-
-p::before{
-    content:"...";
-    display: block;
-}
