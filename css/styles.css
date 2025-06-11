@@ -1,32 +1,12 @@
-h1{
+p{
     color: dodgerblue;
+    border: 1px solid black;
 }
+/* Here the strong element inherits the color blue */
 
 
-.highlight{
-    color: deeppink;
+strong{
+    color: initial;
+    border: inherit;    /* We areexplicitly inheriting the border property */
+
 }
-
-#products{
-    color: greenyellow;
-}
-
-.highlight#products{
-    color: coral;
-}
-
-h1#products{
-    color: paleturquoise;
-}
-/*
-Selector Specificity: Each selector has a specificity or weight. If two rules target the same element, then the rule that is more specific will be applied. 
-
-1. ID selectors
-2. Class and Attributes selectors
-3. Element selectors
-
-Equal specificity: The rule that was applied the last will have more precedence
-
-
-*/
-
